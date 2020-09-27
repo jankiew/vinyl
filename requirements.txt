@@ -1,0 +1,6 @@
+requests==2.23.0
+beautifulsoup4==4.9.0
+urllib3==1.25.8
+json5==0.9.4
+pandas==1.0.3
+pygsheets==2.0.3.1
