@@ -24,7 +24,7 @@ def scrape_urls():
             product.find("div", {"class": "title2"}).text,
             product.find("div", {"class": "pricing"}).text,
             f"https://asfaltshop.pl{product.find('div').find_parent('a')['href']}",
-            [src['data-original'] for src in product.find_all('img')][0]
+            product.find_all('img')[0]['data-original']
         ]) for product in products]
 
     output_df = pd.DataFrame(product_list)
